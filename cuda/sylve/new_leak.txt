@@ -1,0 +1,1209 @@
+========= COMPUTE-SANITIZER
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (32,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20480 is out of bounds
+=========     and is 109 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (33,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20484 is out of bounds
+=========     and is 113 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (34,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20488 is out of bounds
+=========     and is 117 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (35,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e2048c is out of bounds
+=========     and is 121 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (36,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20490 is out of bounds
+=========     and is 125 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (37,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20494 is out of bounds
+=========     and is 129 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (38,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20498 is out of bounds
+=========     and is 133 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (39,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e2049c is out of bounds
+=========     and is 137 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (40,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204a0 is out of bounds
+=========     and is 141 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (41,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204a4 is out of bounds
+=========     and is 145 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (42,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204a8 is out of bounds
+=========     and is 149 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (43,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204ac is out of bounds
+=========     and is 153 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (44,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204b0 is out of bounds
+=========     and is 157 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (45,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204b4 is out of bounds
+=========     and is 161 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (46,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204b8 is out of bounds
+=========     and is 165 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (47,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204bc is out of bounds
+=========     and is 169 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (48,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204c0 is out of bounds
+=========     and is 173 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (49,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204c4 is out of bounds
+=========     and is 177 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (50,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204c8 is out of bounds
+=========     and is 181 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (51,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204cc is out of bounds
+=========     and is 185 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (52,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204d0 is out of bounds
+=========     and is 189 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (53,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204d4 is out of bounds
+=========     and is 193 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (54,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204d8 is out of bounds
+=========     and is 197 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (55,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204dc is out of bounds
+=========     and is 201 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (56,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204e0 is out of bounds
+=========     and is 205 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (57,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204e4 is out of bounds
+=========     and is 209 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (58,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204e8 is out of bounds
+=========     and is 213 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (59,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204ec is out of bounds
+=========     and is 217 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (60,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204f0 is out of bounds
+=========     and is 221 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (61,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204f4 is out of bounds
+=========     and is 225 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (62,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204f8 is out of bounds
+=========     and is 229 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (63,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e204fc is out of bounds
+=========     and is 233 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (5,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20414 is out of bounds
+=========     and is 1 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (6,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20418 is out of bounds
+=========     and is 5 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (7,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e2041c is out of bounds
+=========     and is 9 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (8,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20420 is out of bounds
+=========     and is 13 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (9,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20424 is out of bounds
+=========     and is 17 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (10,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20428 is out of bounds
+=========     and is 21 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (11,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e2042c is out of bounds
+=========     and is 25 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (12,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20430 is out of bounds
+=========     and is 29 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (13,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20434 is out of bounds
+=========     and is 33 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (14,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20438 is out of bounds
+=========     and is 37 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (15,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e2043c is out of bounds
+=========     and is 41 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (16,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20440 is out of bounds
+=========     and is 45 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (17,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20444 is out of bounds
+=========     and is 49 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (18,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20448 is out of bounds
+=========     and is 53 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (19,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e2044c is out of bounds
+=========     and is 57 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (20,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20450 is out of bounds
+=========     and is 61 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (21,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20454 is out of bounds
+=========     and is 65 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (22,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20458 is out of bounds
+=========     and is 69 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (23,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e2045c is out of bounds
+=========     and is 73 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (24,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20460 is out of bounds
+=========     and is 77 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (25,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20464 is out of bounds
+=========     and is 81 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (26,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20468 is out of bounds
+=========     and is 85 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (27,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e2046c is out of bounds
+=========     and is 89 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (28,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20470 is out of bounds
+=========     and is 93 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (29,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20474 is out of bounds
+=========     and is 97 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (30,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e20478 is out of bounds
+=========     and is 101 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Invalid __global__ read of size 4 bytes
+=========     at void cusparse::csrmv_v3_kernel<std::integral_constant<bool, (bool)0>, int, int, double, double, double, double, void>(cusparse::KernelCoeffs<T7>, const T3 *, const T2 *, const T3 *, const T4 *, T2, int, int, const T5 *, T6 *, T3 *, T7 *)+0x8e0
+=========     by thread (31,0,0) in block (0,0,0)
+=========     Address 0x7a6c21e2047c is out of bounds
+=========     and is 105 bytes after the nearest allocation at 0x7a6c21e20400 of size 20 bytes
+=========     Saved host backtrace up to driver entry point at kernel launch time
+=========         Host Frame:  [0x381257] in libcuda.so.1
+=========         Host Frame:  [0x9bf16d] in libcusparse.so.12
+=========         Host Frame:  [0xa228ad] in libcusparse.so.12
+=========         Host Frame:  [0x1c1b84] in libcusparse.so.12
+=========         Host Frame:  [0x1f0415] in libcusparse.so.12
+=========         Host Frame: cusparseSpMV [0xfd779] in libcusparse.so.12
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:570 [0xdac3] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+========= Program hit cudaErrorLaunchFailure (error 719) due to "unspecified launch failure" on CUDA API call to cudaDeviceSynchronize.
+=========     Saved host backtrace up to driver entry point at error
+=========         Host Frame: half_precision_solver(cusparseContext*, cublasContext*, SparseMatrix&, SparseMatrix&, SparseMatrix&, SparseMatrix_double&, double*, double*, double, double, double, int) in sylvester_solver.cu:580 [0xdc08] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1493 [0x14b7b] in sylvester_solver
+========= 
+Validating CSR format: rows=4, cols=4, nnz=8
+Row pointers: 0 2 3 6 8 
+Column indices: 0 1 1 0 2 3 1 3 
+Matrix dimensions: 4 x 4, nnz = 8
+Computing required matrices...
+Matrix transpose completed: 4 x 4 -> 4 x 4
+Created identity matrix: 4 x 4, nnz = 4
+SpGEMM completed: 4 x 4 matrix with 16 non-zeros
+Matrix computation completed.
+H: 4 x 4, nnz = 12
+S: 4 x 4, nnz = 12
+AH: 4 x 4, nnz = 12
+ASS: 4 x 4, nnz = 16
+GPU Memory Usage:
+  Used: 421.88 MB
+  Free: 32072.25 MB
+  Total: 32494.12 MB
+
+=== Running Double-Precision Solver ===
+Double-precision solver: res = -nan, iter = 3
+Double-precision iterations: 3
+Double-precision time: 0.5338 seconds
+
+=== Running Half-Precision Solver ===
+=== Half-Precision Solver Debug ===
+Matrix A: 4 x 4, nnz = 8
+Matrix AH: 4 x 4, nnz = 12
+Matrix ASS: 4 x 4, nnz = 16
+Matrix S: 4 x 4, nnz = 12
+Converting r to half precision: n=4, blocks=1, threads=256
+d_r pointer: 0x7a6c21e24e00, d_r_half pointer: 0x7a6c21e25200
+CUDA error at sylvester_solver.cu 580: unspecified launch failure
+========= Leaked 8,388,608 bytes at 0x7a6c0c000000
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame:  [0x329a16] in libcuda.so.1
+=========         Host Frame:  [0xc6660d] in libcublas.so.12
+=========         Host Frame:  [0xc316e2] in libcublas.so.12
+=========         Host Frame:  [0xc75574] in libcublas.so.12
+=========         Host Frame:  [0x8d52dc] in libcublas.so.12
+=========         Host Frame: cublasCreate_v2 [0x820950] in libcublas.so.12
+=========         Host Frame: main in sylvester_solver.cu:1298 [0x134fd] in sylvester_solver
+========= 
+========= Leaked 1,024 bytes at 0x7a6c21e00000
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame:  [0x329a16] in libcuda.so.1
+=========         Host Frame:  [0xc6660d] in libcublas.so.12
+=========         Host Frame:  [0xc316e2] in libcublas.so.12
+=========         Host Frame:  [0xc75574] in libcublas.so.12
+=========         Host Frame:  [0x8d52dc] in libcublas.so.12
+=========         Host Frame:  [0x8d4b2a] in libcublas.so.12
+=========         Host Frame: cublasCreate_v2 [0x820950] in libcublas.so.12
+=========         Host Frame: main in sylvester_solver.cu:1298 [0x134fd] in sylvester_solver
+========= 
+========= Leaked 131,072 bytes at 0x7a6c21e00400
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame:  [0x329a16] in libcuda.so.1
+=========         Host Frame:  [0xc6660d] in libcublas.so.12
+=========         Host Frame:  [0xc316e2] in libcublas.so.12
+=========         Host Frame:  [0xc75574] in libcublas.so.12
+=========         Host Frame:  [0x8d52dc] in libcublas.so.12
+=========         Host Frame:  [0x8d4b4d] in libcublas.so.12
+=========         Host Frame: cublasCreate_v2 [0x820950] in libcublas.so.12
+=========         Host Frame: main in sylvester_solver.cu:1298 [0x134fd] in sylvester_solver
+========= 
+========= Leaked 20 bytes at 0x7a6c21e20400
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: readMTXFile(char const*, SparseMatrix&) in sylvester_solver.cu:192 [0xb17c] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1302 [0x13570] in sylvester_solver
+========= 
+========= Leaked 32 bytes at 0x7a6c21e20600
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: readMTXFile(char const*, SparseMatrix&) in sylvester_solver.cu:193 [0xb1f2] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1302 [0x13570] in sylvester_solver
+========= 
+========= Leaked 64 bytes at 0x7a6c21e20800
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: readMTXFile(char const*, SparseMatrix&) in sylvester_solver.cu:194 [0xb268] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1302 [0x13570] in sylvester_solver
+========= 
+========= Leaked 16 bytes at 0x7a6c21e20a00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<__half>(__half**, unsigned long) in cuda_runtime.h:836 [0x16478] in sylvester_solver
+=========         Host Frame: readMTXFile(char const*, SparseMatrix&) in sylvester_solver.cu:195 [0xb2da] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1302 [0x13570] in sylvester_solver
+========= 
+========= Leaked 20 bytes at 0x7a6c21e20c00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: createIdentityMatrix(SparseMatrix&, int) in sylvester_solver.cu:773 [0xf409] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1327 [0x13738] in sylvester_solver
+========= 
+========= Leaked 16 bytes at 0x7a6c21e20e00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: createIdentityMatrix(SparseMatrix&, int) in sylvester_solver.cu:774 [0xf47b] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1327 [0x13738] in sylvester_solver
+========= 
+========= Leaked 32 bytes at 0x7a6c21e21000
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: createIdentityMatrix(SparseMatrix&, int) in sylvester_solver.cu:775 [0xf4ed] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1327 [0x13738] in sylvester_solver
+========= 
+========= Leaked 8 bytes at 0x7a6c21e21200
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<__half>(__half**, unsigned long) in cuda_runtime.h:836 [0x16478] in sylvester_solver
+=========         Host Frame: createIdentityMatrix(SparseMatrix&, int) in sylvester_solver.cu:776 [0xf55b] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1327 [0x13738] in sylvester_solver
+========= 
+========= Leaked 20 bytes at 0x7a6c21e21400
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: transposeMatrix(cusparseContext*, SparseMatrix const&, SparseMatrix_double&) in sylvester_solver.cu:828 [0xfadf] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1350 [0x138a4] in sylvester_solver
+========= 
+========= Leaked 32 bytes at 0x7a6c21e21600
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: transposeMatrix(cusparseContext*, SparseMatrix const&, SparseMatrix_double&) in sylvester_solver.cu:829 [0xfb46] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1350 [0x138a4] in sylvester_solver
+========= 
+========= Leaked 64 bytes at 0x7a6c21e21800
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: transposeMatrix(cusparseContext*, SparseMatrix const&, SparseMatrix_double&) in sylvester_solver.cu:830 [0xfbad] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1350 [0x138a4] in sylvester_solver
+========= 
+========= Leaked 20 bytes at 0x7a6c21e21a00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1359 [0x13900] in sylvester_solver
+========= 
+========= Leaked 16 bytes at 0x7a6c21e21c00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1360 [0x13972] in sylvester_solver
+========= 
+========= Leaked 32 bytes at 0x7a6c21e21e00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1361 [0x139e4] in sylvester_solver
+========= 
+========= Leaked 20 bytes at 0x7a6c21e22000
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixAdd_double(cusparseContext*, cublasContext*, SparseMatrix const&, SparseMatrix_double const&, SparseMatrix_double&, double, double) in sylvester_solver.cu:993 [0x10e8e] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1394 [0x13e1a] in sylvester_solver
+========= 
+========= Leaked 20 bytes at 0x7a6c21e22200
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixAdd_double(cusparseContext*, cublasContext*, SparseMatrix const&, SparseMatrix_double const&, SparseMatrix_double&, double, double) in sylvester_solver.cu:993 [0x10e8e] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1398 [0x13e6c] in sylvester_solver
+========= 
+========= Leaked 48 bytes at 0x7a6c21e22400
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixAdd_double(cusparseContext*, cublasContext*, SparseMatrix const&, SparseMatrix_double const&, SparseMatrix_double&, double, double) in sylvester_solver.cu:1018 [0x11180] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1394 [0x13e1a] in sylvester_solver
+========= 
+========= Leaked 96 bytes at 0x7a6c21e22600
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: matrixAdd_double(cusparseContext*, cublasContext*, SparseMatrix const&, SparseMatrix_double const&, SparseMatrix_double&, double, double) in sylvester_solver.cu:1019 [0x111ed] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1394 [0x13e1a] in sylvester_solver
+========= 
+========= Leaked 20 bytes at 0x7a6c21e22800
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixAdd(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix&, double, double) in sylvester_solver.cu:903 [0x1026f] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1402 [0x13ebe] in sylvester_solver
+========= 
+========= Leaked 48 bytes at 0x7a6c21e22a00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixAdd_double(cusparseContext*, cublasContext*, SparseMatrix const&, SparseMatrix_double const&, SparseMatrix_double&, double, double) in sylvester_solver.cu:1018 [0x11180] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1398 [0x13e6c] in sylvester_solver
+========= 
+========= Leaked 96 bytes at 0x7a6c21e22c00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: matrixAdd_double(cusparseContext*, cublasContext*, SparseMatrix const&, SparseMatrix_double const&, SparseMatrix_double&, double, double) in sylvester_solver.cu:1019 [0x111ed] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1398 [0x13e6c] in sylvester_solver
+========= 
+========= Leaked 20 bytes at 0x7a6c21e22e00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixAdd_double_double(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix_double&, double, double) in sylvester_solver.cu:1071 [0x1184b] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1406 [0x13f10] in sylvester_solver
+========= 
+========= Leaked 48 bytes at 0x7a6c21e23000
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixAdd(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix&, double, double) in sylvester_solver.cu:928 [0x10573] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1402 [0x13ebe] in sylvester_solver
+========= 
+========= Leaked 96 bytes at 0x7a6c21e23200
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: matrixAdd(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix&, double, double) in sylvester_solver.cu:929 [0x105e9] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1402 [0x13ebe] in sylvester_solver
+========= 
+========= Leaked 24 bytes at 0x7a6c21e23400
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<__half>(__half**, unsigned long) in cuda_runtime.h:836 [0x16478] in sylvester_solver
+=========         Host Frame: matrixAdd(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix&, double, double) in sylvester_solver.cu:930 [0x1065b] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1402 [0x13ebe] in sylvester_solver
+========= 
+========= Leaked 20 bytes at 0x7a6c21e23600
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixAdd(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix&, double, double) in sylvester_solver.cu:903 [0x1026f] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1410 [0x13f62] in sylvester_solver
+========= 
+========= Leaked 48 bytes at 0x7a6c21e23800
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixAdd_double_double(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix_double&, double, double) in sylvester_solver.cu:1096 [0x11b3d] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1406 [0x13f10] in sylvester_solver
+========= 
+========= Leaked 96 bytes at 0x7a6c21e23a00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: matrixAdd_double_double(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix_double&, double, double) in sylvester_solver.cu:1097 [0x11baa] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1406 [0x13f10] in sylvester_solver
+========= 
+========= Leaked 20 bytes at 0x7a6c21e23c00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixMultiply(cusparseContext*, SparseMatrix const&, SparseMatrix_double const&, SparseMatrix&) in sylvester_solver.cu:1234 [0x12b0a] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1420 [0x14026] in sylvester_solver
+========= 
+========= Leaked 48 bytes at 0x7a6c21e23e00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<int>(int**, unsigned long) in cuda_runtime.h:836 [0x1642e] in sylvester_solver
+=========         Host Frame: matrixAdd(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix&, double, double) in sylvester_solver.cu:928 [0x10573] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1410 [0x13f62] in sylvester_solver
+========= 
+========= Leaked 96 bytes at 0x7a6c21e24000
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: matrixAdd(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix&, double, double) in sylvester_solver.cu:929 [0x105e9] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1410 [0x13f62] in sylvester_solver
+========= 
+========= Leaked 24 bytes at 0x7a6c21e24200
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<__half>(__half**, unsigned long) in cuda_runtime.h:836 [0x16478] in sylvester_solver
+=========         Host Frame: matrixAdd(cusparseContext*, cublasContext*, SparseMatrix_double const&, SparseMatrix_double const&, SparseMatrix&, double, double) in sylvester_solver.cu:930 [0x1065b] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1410 [0x13f62] in sylvester_solver
+========= 
+========= Leaked 32 bytes at 0x7a6c21e24400
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1432 [0x140ee] in sylvester_solver
+========= 
+========= Leaked 32 bytes at 0x7a6c21e24600
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1433 [0x1415c] in sylvester_solver
+========= 
+========= Leaked 32 bytes at 0x7a6c21e24800
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1434 [0x141ca] in sylvester_solver
+========= 
+========= Leaked 32 bytes at 0x7a6c21e24a00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: cudaError cudaMalloc<double>(double**, unsigned long) in cuda_runtime.h:836 [0x16453] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1435 [0x14238] in sylvester_solver
+========= 
+========= Leaked 8 bytes at 0x7a6c21e24c00
+=========     Saved host backtrace up to driver entry point at allocation time
+=========         Host Frame: cudaMalloc [0x624d5] in sylvester_solver
+=========         Host Frame: main in sylvester_solver.cu:1453 [0x14505] in sylvester_solver
+========= 
+========= Target application returned an error
+========= LEAK SUMMARY: 8522528 bytes leaked in 54 allocations
+========= ERROR SUMMARY: 114 errors
+========= ERROR SUMMARY: 14 errors were not printed. Use --print-limit option to adjust the number of printed errors

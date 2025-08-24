@@ -1,0 +1,35 @@
+========= COMPUTE-SANITIZER
+Matrix dimensions: 921600 x 921600, nnz = 2762880
+Computing required matrices...
+Matrix transpose completed: 921600 x 921600 -> 921600 x 921600
+Created identity matrix: 921600 x 921600, nnz = 921600
+SpGEMM completed: 921600 x 921600 matrix with 11961604 non-zeros
+Matrix computation completed.
+H: 921600 x 921600, nnz = 4604160
+S: 921600 x 921600, nnz = 4604160
+AH: 921600 x 921600, nnz = 4604160
+ASS: 921600 x 921600, nnz = 11961604
+Half-precision solver: res = 1.023319e+00, iter = 1000
+GPU Memory Usage:
+  Used: 1039.88 MB
+  Free: 31454.25 MB
+  Total: 32494.12 MB
+
+=== Running Half-Precision Solver ===
+Half-precision solver: res = 1.023319e+00, iter = 1000
+Half-precision iterations: 1000
+Half-precision time: 1904.7328 seconds
+
+=== Running Double-Precision Solver ===
+Double-precision solver: res = 1.000000e+00, iter = 0
+Double-precision iterations: 0
+Double-precision time: 0.0023 seconds
+
+=== Performance Comparison ===
+Speedup (double-precision time / half-precision time): 0.00x
+GPU Memory Usage:
+  Used: 1039.88 MB
+  Free: 31454.25 MB
+  Total: 32494.12 MB
+========= LEAK SUMMARY: 0 bytes leaked in 0 allocations
+========= ERROR SUMMARY: 0 errors
