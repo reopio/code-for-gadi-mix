@@ -1403,11 +1403,15 @@ void printMemoryUsage() {
 }
 
 int main(int argc, char **argv) {
-    if (argc != 2) {
-        printf("Usage: %s <mtx_file>\n", argv[0]);
+
+    if (argc != 4) {
+        printf("Usage: %s <mtx_file> <alpha> <w>\n", argv[0]);
+        printf("  mtx_file: path to matrix market file\n");
+        printf("  alpha: alpha parameter (e.g., 0.48)\n");
+        printf("  w: w parameter (e.g., 0.1)\n");
         return 1;
     }
-    
+
     // Initialize CUDA libraries
     cusparseHandle_t cusparseHandle;
     cublasHandle_t cublasHandle;
@@ -1415,9 +1419,24 @@ int main(int argc, char **argv) {
     CHECK_CUSPARSE(cusparseCreate(&cusparseHandle));
     CHECK_CUBLAS(cublasCreate(&cublasHandle));
     
+    // Parse command line arguments
+    const char* mtx_file = argv[1];
+    double alpha = atof(argv[2]);
+    double w = atof(argv[3]);
+    
+    // Validate parameters
+    if (alpha <= 0 || alpha >= 1) {
+        printf("Warning: alpha = %f is outside typical range (0, 1)\n", alpha);
+    }
+    if (w <= 0 || w >= 2) {
+        printf("Warning: w = %f is outside typical range (0, 2)\n", w);
+    }
+    
+    printf("Parameters: alpha = %f, w = %f\n", alpha, w);
+    
     // Read matrix from MTX file
     SparseMatrix A;
-    if (!readMTXFile(argv[1], A)) {
+    if (!readMTXFile(mtx_file, A)) {
         printf("Failed to read MTX file\n");
         return 1;
     }
@@ -1425,8 +1444,8 @@ int main(int argc, char **argv) {
     printf("Matrix dimensions: %d x %d, nnz = %d\n", A.rows, A.cols, A.nnz);
     
     // Parameters (matching the Python code)
-    double alpha = 0.9;
-    double w = 0.6;
+    // double alpha = 0.9;
+    // double w = 0.6;
     int n = A.rows;
     
     // Create identity matrix

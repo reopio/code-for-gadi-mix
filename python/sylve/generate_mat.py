@@ -1,7 +1,7 @@
 import numpy as np
-from scipy.sparse import spdiags, eye, kron, csr_matrix
 from scipy import sparse
 from scipy.io import mmwrite
+import argparse
 
 def generate_tridiag(n, a, b, c):
     """生成三对角矩阵，a为下对角线，b为主对角线，c为上对角线"""
@@ -51,7 +51,7 @@ def generate_sylvester_csr(n, r):
     coeff_matrix = A_kron + B_kron
     
     # Save matrix to MTX format
-    filename = f"sylve{n}.mtx"
+    filename = f"../../cuda/sylve/sylve{n}.mtx"
     mmwrite(filename, coeff_matrix)
     print(f"Matrix saved to {filename}")
     
@@ -60,10 +60,14 @@ def generate_sylvester_csr(n, r):
 def main():
     """主函数：生成Sylvester方程系数矩阵并保存
     """
-    n = 2560  # 矩阵维度
-    r = 1.0  # 参数r
-    coeff_matrix = generate_sylvester_csr(n, r)
-    print(f"Sylvester coefficient matrix of size {n} generated and saved.")
+    parser = argparse.ArgumentParser(description='Generate Sylvester equation coefficient matrix')
+    parser.add_argument('-n', type=int, help='Matrix dimension')
+    parser.add_argument('-r', type=float, default=1.0, help='Parameter r (default: 1.0)')
+    
+    args = parser.parse_args()
+
+    generate_sylvester_csr(args.n, args.r)
+    print(f"Sylvester coefficient matrix of size {args.n} generated and saved.")
 
 
 if __name__ == "__main__":
